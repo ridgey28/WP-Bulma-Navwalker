@@ -27,12 +27,12 @@ Setup the Bulma NavBar and wp_nav_menu in header.php.  This demo example uses is
 	 <div class="navbar-end">
 		 <?php wp_nav_menu(array(
 			 'theme-location' => 'header-menu', //change it according to your register_nav_menus() function
-			 'depth'				=>	3,
-			 'menu'					=>	'NewNav',
+			 'depth'		=>	3,
+			 'menu'			=>	'NewNav',
 			 'container'		=>	'',
 			 'menu_class'		=>	'',
 			 'items_wrap'		=>	'%3$s',
-			 'walker'				=>	new Bulma_NavWalker(),
+			 'walker'		=>	new Bulma_NavWalker(),
 			 'fallback_cb'	=>	'Bulma_NavWalker::fallback'
 		 ));
 		 ?>
